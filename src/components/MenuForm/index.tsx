@@ -1,8 +1,12 @@
 import React from 'react';
 
+import { useSideMenu } from '../../hooks/sidemenu';
+
 import { Container, Navigation, DropboxLogo, Form } from './styles';
 
 const MenuForm: React.FC = ({ children }) => {
+  const { closeSideMenu } = useSideMenu();
+
   return (
     <Container>
       <Navigation>
@@ -11,7 +15,7 @@ const MenuForm: React.FC = ({ children }) => {
           <span>DropBox</span>
         </h1>
 
-        <button className="action--close" type="button">
+        <button className="action--close" type="button" onClick={closeSideMenu}>
           ✕
         </button>
       </Navigation>

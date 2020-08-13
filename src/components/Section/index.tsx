@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useSideMenu } from '../../hooks/sidemenu';
+
 import { IProps } from './types';
 import {
   Container,
@@ -10,6 +12,7 @@ import {
 } from './styles';
 
 const Section: React.FC<IProps> = ({ variant, title, description }) => {
+  const { openSideMenu } = useSideMenu();
   const buttonVariant = Math.round(Math.random());
 
   return (
@@ -21,7 +24,7 @@ const Section: React.FC<IProps> = ({ variant, title, description }) => {
             <span>DropBox</span>
           </h1>
 
-          <button type="button">
+          <button type="button" onClick={openSideMenu}>
             {buttonVariant === 0 ? 'Acessar' : 'Interagir'}
           </button>
         </Header>
