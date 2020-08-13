@@ -1,7 +1,17 @@
 import React from 'react';
 
-const Section: React.FC = () => {
-  return <></>;
+import { IProps } from './types';
+import { Container, Content } from './styles';
+
+const Section: React.FC<IProps> = ({ variant, title, description }) => {
+  return (
+    <Container>
+      <Content>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </Content>
+    </Container>
+  );
 };
 
 export default Section;
