@@ -5,7 +5,7 @@ import { Container, Content } from './styles';
 
 const Section: React.FC<IProps> = ({ variant, title, description }) => {
   return (
-    <Container>
+    <Container className={variant}>
       <Content>
         <h2>{title}</h2>
         <p>{description}</p>
