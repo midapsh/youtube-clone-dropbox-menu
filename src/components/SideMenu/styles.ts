@@ -19,6 +19,5 @@ export const Container = styled.div`
 
   @media (min-width: 1440px) {
     width: calc(480px + ((100vw - 1440px) / 2));
-    box-shadow: -7px 0 5px -6px rgba(0, 0, 0, 0.075);
   }
 `;

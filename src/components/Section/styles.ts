@@ -48,19 +48,15 @@ export const Container = styled.div`
 export const HeaderWrapper = styled.div`
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
 
+  background: var(--bg-color);
   clip: rect(auto, auto, auto, auto);
 `;
 
 export const Header = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
   z-index: 3;
   background: var(--bg-color);
 
@@ -95,6 +91,11 @@ export const Header = styled.header`
       text-decoration: underline;
     }
   }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 `;
 
 export const DropboxLogo = styled(FaDropbox)`
@@ -120,4 +121,6 @@ export const Content = styled.div`
     color: var(--text-color);
     max-width: vat(--content-width);
   }
+
+  padding: var(--padding-top) 32px var(--padding-bottom);
 `;
