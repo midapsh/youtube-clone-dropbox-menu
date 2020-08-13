@@ -54,6 +54,11 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   z-index: 3;
   background: var(--bg-color);
 
@@ -63,6 +68,31 @@ export const Header = styled.header`
   max-width: 1440px;
   margin: 0 auto;
   padding: 16px 32px;
+
+  > h1 {
+    display: flex;
+    align-items: center;
+
+    > span {
+      color: var(--text-color);
+      margin-left: 10px;
+      font-size: 29px;
+    }
+  }
+
+  > button {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const DropboxLogo = styled(FaDropbox)`
