@@ -42,9 +42,12 @@ export const Container = styled.div`
   }
 
   background: var(--bg-color);
+  position: relative;
 `;
 
-export const HeaderWrapper = styled.div``;
+export const HeaderWrapper = styled.div`
+  position: absolute;
+`;
 
 export const Header = styled.div``;
 
