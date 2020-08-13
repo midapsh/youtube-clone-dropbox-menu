@@ -23,6 +23,8 @@ export const Container = styled.div`
 
   transform: translateX(100%);
 
+  transition: 0.5s transform cubic-bezier(0.5, 0, 0, 1);
+
   @media (min-width: 1024px) {
     &.scrollOpen {
       transform: translateX(0);
