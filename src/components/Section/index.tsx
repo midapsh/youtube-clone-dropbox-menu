@@ -19,7 +19,7 @@ const Section: React.FC<IProps> = ({ variant, title, description }) => {
             <span>DropBox</span>
           </h1>
 
-          <button>Interagir</button>
+          <button type="button">Interagir</button>
         </Header>
       </HeaderWrapper>
 
