@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Section from '../../components/Section';
+import SideMenu from '../../components/SideMenu';
 import data from '../../data';
 
 const HomePage: React.FC = () => {
@@ -31,6 +32,7 @@ const HomePage: React.FC = () => {
         title={data[4].title}
         description={data[4].description}
       />
+      <SideMenu />
     </>
   );
 };
