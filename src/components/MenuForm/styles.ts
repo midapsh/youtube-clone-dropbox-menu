@@ -53,4 +53,14 @@ export const DropboxLogo = styled(FaDropbox)`
   fill: var(--color-blue);
 `;
 
-export const Form = styled.div``;
+export const Form = styled.nav`
+  display: flex;
+  height: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 32px;
+  max-width: 480px;
+  margin: 0 auto;
+`;
