@@ -10,6 +10,8 @@ import {
 } from './styles';
 
 const Section: React.FC<IProps> = ({ variant, title, description }) => {
+  const buttonVariant = Math.round(Math.random());
+
   return (
     <Container className={variant}>
       <HeaderWrapper>
@@ -19,7 +21,9 @@ const Section: React.FC<IProps> = ({ variant, title, description }) => {
             <span>DropBox</span>
           </h1>
 
-          <button type="button">Interagir</button>
+          <button type="button">
+            {buttonVariant === 0 ? 'Acessar' : 'Interagir'}
+          </button>
         </Header>
       </HeaderWrapper>
 
