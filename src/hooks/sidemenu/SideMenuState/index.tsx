@@ -11,7 +11,7 @@ export const SideMenuContext = createContext<ISideMenuContextData>(
 );
 
 export const SideMenuProvider: React.FC = ({ children }) => {
-  const [sideMenuState, setSideMenuState] = useState<boolean>(true);
+  const [sideMenuState, setSideMenuState] = useState<boolean>(false);
 
   const openSideMenu = useCallback(async (): Promise<void> => {
     setSideMenuState(true);
