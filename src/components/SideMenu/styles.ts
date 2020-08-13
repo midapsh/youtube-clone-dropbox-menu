@@ -20,4 +20,12 @@ export const Container = styled.div`
   @media (min-width: 1440px) {
     width: calc(480px + ((100vw - 1440px) / 2));
   }
+
+  transform: translateX(100%);
+
+  @media (min-width: 1024px) {
+    &.scrollOpen {
+      transform: translateX(0);
+    }
+  }
 `;
