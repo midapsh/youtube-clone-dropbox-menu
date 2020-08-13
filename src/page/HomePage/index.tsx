@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Section from '../../components/Section';
+
 const HomePage: React.FC = () => {
   return (
     <>
-      <h1>Rockeatseat</h1>
+      <Section />
     </>
   );
 };
