@@ -17,7 +17,34 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  padding: 16px;
+  padding: 16px 32px;
+  min-height: 61px;
+
+  > h1 {
+    display: flex;
+    align-items: center;
+
+    > span {
+      color: var(--color-quartenary);
+      margin-left: 10px;
+      font-size: 29px;
+    }
+  }
+
+  > button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  @media (min-width: 1024px) {
+    > h1 {
+      display: none;
+    }
+  }
 `;
 
 export const DropboxLogo = styled(FaDropbox)`
