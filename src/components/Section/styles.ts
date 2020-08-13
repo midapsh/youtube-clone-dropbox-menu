@@ -51,11 +51,19 @@ export const HeaderWrapper = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-
-  background: var(--bg-color);
 `;
 
-export const Header = styled.div``;
+export const Header = styled.header`
+  z-index: 3;
+  background: var(--bg-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 32px;
+`;
 
 export const DropboxLogo = styled(FaDropbox)`
   width: 36px;
